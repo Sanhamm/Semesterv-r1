@@ -1,0 +1,107 @@
+.Hero-bilde img {
+    width: 100vw;
+}
+
+/* .Hero-bilde h1 {
+    position: absolute;
+    bottom: 450px;
+    left: 150px;
+    font-size: 4rem;
+} */
+.Hero-bilde {
+    margin-bottom: -5px;
+
+}
+
+.latestPost {
+    margin: auto;
+    display: grid;
+    max-width: 1280px;
+    background-color: white;
+    padding: 30px;
+    border: 0,1px solid black;
+    border-radius: 2px;
+}
+
+.latestPost img {
+    width: 247px;
+    height: 166px;
+    border: 1px solid black;
+    border-radius: 2px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.latestPost h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.latestPost button {
+    padding: 15px 0px 15px 0px;
+    background-color: #7fc673;
+    border: none;
+    border-radius: 3px;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.latestPost button:hover {
+    background-color: rgba(127, 198, 115, 0.8);
+
+}
+
+#scroller {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    background-color: rgba(127, 198, 115, 0.3);
+    justify-content: center;
+    padding: 90px;
+    margin: 0;
+    height: 500px;
+}
+
+#index-posts, #index-aboutus {
+    margin: auto;
+    background-color: rgba(127, 198, 115, 0.3);
+    padding: 60px 50px 100px 50px;
+    border-radius: 5px;
+}
+
+#index-posts img, #index-aboutus img {
+    width: 383px;
+    height: 260px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+#index-posts h2, #index-aboutus h2 {
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+#index-posts button, #index-aboutus button {
+    padding: 20px 85px 20px 85px;
+    background-color: #f8f8f8;
+    border: 1px solid #f8f8f8;
+    border-radius: 3px;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+#index-posts button:hover, #index-aboutus button:hover {
+    border: 1px solid black;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    max-width: 1280px;
+    text-align: center;
+}
