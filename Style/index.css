@@ -2,25 +2,31 @@
     width: 100vw;
 }
 
+p, h2, li, h1, button {
+    font-family: 'Hepta Slab', serif, verdana;
+}
+
 /* .Hero-bilde h1 {
-    position: absolute;
-    bottom: 450px;
-    left: 150px;
-    font-size: 4rem;
+    position: relative;
+    top: 210px;
+    left: 100px;
+    font-size: 3rem;
+    font-weight: 400;
 } */
+
 .Hero-bilde {
     margin-bottom: -5px;
-
 }
 
 .latestPost {
     margin: auto;
-    display: grid;
+    /* display: grid; */
     max-width: 1280px;
     background-color: white;
     padding: 30px;
     border: 0,1px solid black;
     border-radius: 2px;
+    text-align: center;
 }
 
 .latestPost img {
@@ -30,6 +36,7 @@
     border-radius: 2px;
     object-fit: cover;
     object-position: bottom;
+    text-align: center;
 }
 
 .latestPost h2 {
@@ -38,7 +45,7 @@
 }
 
 .latestPost button {
-    padding: 15px 0px 15px 0px;
+    padding: 15px 40px 15px 40px;
     background-color: #7fc673;
     border: none;
     border-radius: 3px;
@@ -53,10 +60,9 @@
 
 #scroller {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: rgba(127, 198, 115, 0.3);
-    justify-content: center;
-    padding: 90px;
+    padding: 90px 0px 90px 0px;
     margin: 0;
     height: 500px;
 }
@@ -78,6 +84,8 @@
 #index-posts h2, #index-aboutus h2 {
     font-size: 2.3rem;
     text-align: center;
+    font-weight: 400;
+
 }
 
 #index-posts button, #index-aboutus button {
@@ -104,4 +112,91 @@
     margin-bottom: 80px;
     max-width: 1280px;
     text-align: center;
+}
+
+/*---------------------------------------------------tablet-------------------------------------------------*/
+
+@media screen and (max-width: 1124px){
+    
+    .Hero-bilde h1 {
+        position: absolute;
+        top: 140px;
+        left: 100px;
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    .Hero-bilde {
+        margin-top: 0px;
+    }
+    
+    #index-posts, #index-aboutus {
+        margin: auto;
+        border-radius: 5px;
+        background-color: white;
+        padding: 0px;
+        margin-bottom: 70px;
+    }
+    
+    #index-posts img, #index-aboutus img {
+        width: 80%;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 2px;
+        text-align: center;
+        margin: auto;
+    }
+    
+    #index-posts h2, #index-aboutus h2 {
+        font-size: 2.3rem;
+        text-align: center;
+        font-weight: 400;
+    
+    }
+    
+    #index-posts button, #index-aboutus button {
+        padding: 20px 85px 20px 85px;
+        background-color: #f8f8f8;
+        border: 1px solid #f8f8f8;
+        border-radius: 3px;
+        text-decoration: underline;
+        font-size: 2rem;
+        margin-top: 20px;
+        border: 0.2px solid;
+    }
+    
+    #index-posts button:hover, #index-aboutus button:hover {
+        background-color: #e3e3e3;
+        border: 0.2px solid;
+
+    }
+    
+    
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 80%;
+        margin: auto;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        max-width: 1280px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    
+    
+
+}
+/*-------------------------mobile-----------------------*/
+@media screen and (max-width: 600px){
+    .Hero-bilde h1 {
+        font-size: 1.3rem;
+        top: 140px;
+        left: 55px;
+    }
+
+    .Hero-bilde{
+        margin-top: 0px;
+    }
 }

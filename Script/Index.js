@@ -17,7 +17,7 @@ fetch("https://www.sanhamm.no/exam1/wp-json/wp/v2/posts?_embed", {
     }
 
 })
-.catch(error => list.innerHTML = `<div class = 'rød'>"something went wrong</div>`);
+.catch(error => list.innerHTML = `<div class = 'rød'>something went wrong</div>`);
 
 console.log("hei hei");
 

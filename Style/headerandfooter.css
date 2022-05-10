@@ -5,14 +5,20 @@ body {
 
 /*------------------------------------------------Desktop version-------------------------------------------*/
 
+p, h2, li, h1, button {
+    font-family: 'Hepta Slab', serif, verdana;
+}
+
 
 header {
     background-color: #7FC673;
     display: grid;
     margin: 0;
     text-decoration: none;
-    grid-template-columns: 20% 75% 5%;
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
+
 
 header #meny {
     display: none;
@@ -25,9 +31,10 @@ header div {
 }
 
 header ul{
-    display: flex;
     color: black;
+    display: flex;
 }
+
 
 header  li {
     margin-right: 70px;
@@ -85,10 +92,14 @@ footer i {
     }
 
     header {
-        display: flex;
+        grid-template-columns: 1fr 1fr;
     }
 
-    header li {
+    header ul {
+        display: block;
+    }
+
+    #menyListe {
         display: none;
     }
 
@@ -112,4 +123,12 @@ footer i {
 
 }
 
+@media screen and (max-width: 600px){
+    footer li {
+        font-size: 20px;
+    }
+
+    header #meny {
+    }
+}
 
