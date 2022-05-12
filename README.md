@@ -2,4 +2,4 @@ Semester vår 1
 
 Sanders matblogg
 
-Netlify:
+Netlify: https://loquacious-tapioca-c32669.netlify.app/
