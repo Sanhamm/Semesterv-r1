@@ -68,11 +68,11 @@ input::placeholder, textarea::placeholder {
 
 @media screen and (max-width: 750px){
     #msg {
-        width: 90vw;
+        width: 80vw;
     }
 }
 @media screen and (max-width: 400px) {
     #navn, #subject, #mail {
-        width: 90vw;
+        width: 70vw;
     }
 }
