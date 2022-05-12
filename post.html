@@ -9,6 +9,7 @@
     <meta name="keywords" content="Food, blog, school">
     <title>Oppskrifter</title>
     <script src="./Script/post.js" defer></script>
+    <script src="./Script/header.js" defer></script>
     <link rel="stylesheet" href="./Style/headerandfooter.css">
     <link rel="stylesheet" href="./Style/post.css">
     <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;600&display=swap" rel="stylesheet">
@@ -16,10 +17,13 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <p><a href="./Index.html">Sander's <br>Matblogg</a></p>
+        <div>
+            <p class="logo"><a href="./Index.html">Sander's <br>Matblogg</a></p>
+        </div>        
+        <div>
+            <i id="meny" class="fa-solid fa-bars"></i>
         </div>
-        <div class="menu">
+        <div id="menyListe">
             <ul>
                 <li><a href="./Index.html">Hjem</a></li>
                 <li style="text-decoration: underline;"><a href="./post.html">Oppskrifter</a></li>
@@ -27,16 +31,14 @@
                 <li><a href="./Aboutus.html">Om oss</a></li>
             </ul>
         </div>
-        <div class="meny">
-            <i id="meny" class="fa-solid fa-bars"></i>
-        </div>
-
     </header>
     <main>
         <h1>Sander's oppskrifter</h1>
         <div id="blogPosts">
         </div>
-        <button>Last inn flere</button>
+        <div id="lastInn">
+            <button>Last inn flere</button>
+        </div>
     </main>
 
     <footer>

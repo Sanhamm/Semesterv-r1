@@ -9,6 +9,7 @@
     <meta name="keywords" content="Food, blog, school">
     <title>Kontakt oss</title>
     <script src="./Script/form.js" defer></script>
+    <script src="./Script/header.js" defer></script>
     <link rel="stylesheet" href="./Style/headerandfooter.css">
     <link rel="stylesheet" href="./Style/form.css">
     <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@400;600&display=swap" rel="stylesheet">
@@ -16,10 +17,13 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <p><a href="./Index.html">Sander's <br>Matblogg</a></p>
+        <div>
+            <p class="logo"><a href="./Index.html">Sander's <br>Matblogg</a></p>
+        </div>        
+        <div>
+            <i id="meny" class="fa-solid fa-bars"></i>
         </div>
-        <div class="menu">
+        <div id="menyListe">
             <ul>
                 <li><a href="./Index.html">Hjem</a></li>
                 <li><a href="./post.html">Oppskrifter</a></li>
@@ -27,18 +31,16 @@
                 <li><a href="./Aboutus.html">Om oss</a></li>
             </ul>
         </div>
-        <div class="meny">
-            <i id="meny" class="fa-solid fa-bars"></i>
-        </div>
-
     </header>
+
     <main>
         <div>        
             <h1>Kontakt oss</h1>
         </div>
+        <p id="message"></p>
+
         <div>
-            <form id="Kontakt">
-                <p id="message"></p>
+            <form id="contact">
                 <div>
                     <input type="text" id="navn" name="navn" placeholder="Navn">
                     <span id="navnMld"></span>
@@ -52,11 +54,11 @@
                     <span id="mailMld"></span>
                 </div>
                 <div>
-                    <textarea id="msg" name="msg" style="height: 200px; width: 700px;" placeholder="Melding"></textarea>
+                    <textarea id="msg" name="msg"  placeholder="Melding"></textarea>
                     <span id="msgMld"></span>
                 </div>
                 <div>  
-                    <input type="submit" value="Send inn">
+                    <input id="btn" type="submit" value="Send inn">
                 </div>
             </form>
         </div>
