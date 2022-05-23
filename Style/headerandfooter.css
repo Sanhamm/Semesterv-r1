@@ -16,6 +16,7 @@ header {
     margin: 0;
     text-decoration: none;
     grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
 }
 
 
@@ -101,11 +102,14 @@ footer i {
     }
 
     header {
-        grid-template-columns: 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr; */
     }
 
     header ul {
         display: block;
+        position: absolute;
+        top: 50%;
+        right: 1000px;
     }
 
     #menyListe {
@@ -127,6 +131,9 @@ footer i {
         display: block;
         text-align: right;
         font-size: 50px;
+        position: absolute;
+        right: 20px;
+        top: 34%;
     }
     
 

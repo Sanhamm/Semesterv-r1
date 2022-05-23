@@ -26,7 +26,7 @@ let list = document.querySelector("div#scroller");
 let listScroller = (myList) => {
     list.innerHTML = "";
     console.log(myList);
-    let hello = myList.slice(0, 3)
+    let hello = myList.slice(0, 6)
     for(let post of hello) {
         console.log(post);
         let newList = `<div class = 'latestPost'>

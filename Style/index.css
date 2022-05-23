@@ -23,10 +23,12 @@ p, h2, li, h1, button {
     /* display: grid; */
     max-width: 1280px;
     background-color: white;
-    padding: 30px;
+    padding: 40px;
     border: 0,1px solid black;
     border-radius: 2px;
     text-align: center;
+    translate: -140%;
+    margin: 55px;
 }
 
 .latestPost img {
@@ -40,7 +42,7 @@ p, h2, li, h1, button {
 }
 
 .latestPost h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -50,7 +52,8 @@ p, h2, li, h1, button {
     border: none;
     border-radius: 3px;
     text-decoration: underline;
-    font-size: 2rem;
+    font-size: 1.3rem;
+    
 }
 
 .latestPost button:hover {
@@ -58,14 +61,38 @@ p, h2, li, h1, button {
 
 }
 
-#scroller {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+main {
+    position: relative;
+    border: solid 1px black;
     background-color: rgba(127, 198, 115, 0.3);
+
+}
+
+#scroller {
+    display: flex;
     padding: 90px 0px 90px 0px;
     margin: 0;
     height: 500px;
+    overflow-x: hidden;
+    border: solid 1px red;
+    width: 90%;
+    margin: auto;
+
 }
+
+.arrow-left, .arrow-right {
+    position: absolute;
+    top: 50%;
+}
+
+.arrow-left {
+    right: 20px;
+}
+
+.arrow-right {
+    left: 20px;
+}
+
 
 #index-posts, #index-aboutus {
     margin: auto;

@@ -1,4 +1,4 @@
-fetch("https://www.sanhamm.no/exam1/wp-json/wp/v2/posts?_embed", {
+fetch("https://www.sanhamm.no/exam1/wp-json/wp/v2/posts?_embed&per_page=100", {
     "method": "GET"
 })
 .then(response => {
@@ -33,9 +33,9 @@ let listScroller = (myList) => {
         <img src='${post._embedded['wp:featuredmedia']['0'].source_url}'>
         <h2>${post.title.rendered}</h2>
         <p>${post.excerpt.rendered}
-        <button>Lag selv</button
-        </div>`
+        <a href='./detailpost.html?id=${post.id}'>Lag selv</a>`
         list.innerHTML += newList;
+        console.log(post.id);
     }
 
 }
