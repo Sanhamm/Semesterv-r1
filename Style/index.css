@@ -24,7 +24,7 @@ p, h2, li, h1, button {
     max-width: 1280px;
     background-color: white;
     padding: 40px;
-    border: 0,1px solid black;
+    border: 0.1px solid black;
     border-radius: 2px;
     text-align: center;
     translate: -140%;
@@ -44,37 +44,39 @@ p, h2, li, h1, button {
 .latestPost h2 {
     font-size: 1.5rem;
     text-align: center;
+    margin-bottom: 40px;
 }
 
-.latestPost button {
+.latestPost a {
     padding: 15px 40px 15px 40px;
     background-color: #7fc673;
     border: none;
     border-radius: 3px;
     text-decoration: underline;
     font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
     
 }
 
-.latestPost button:hover {
+.latestPost a:hover {
     background-color: rgba(127, 198, 115, 0.8);
 
 }
 
 main {
     position: relative;
-    border: solid 1px black;
     background-color: rgba(127, 198, 115, 0.3);
 
 }
 
 #scroller {
     display: flex;
-    padding: 90px 0px 90px 0px;
+    /* padding: 90px 0px 90px 0px; */
     margin: 0;
     height: 500px;
     overflow-x: hidden;
-    border: solid 1px red;
     width: 90%;
     margin: auto;
 
@@ -87,16 +89,31 @@ main {
 
 .arrow-left {
     right: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
 .arrow-right {
     left: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.arrow-right:hover, .arrow-left:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.arrow-right:active, .arrow-left:active {
+    background-color: rgba(0, 0, 0, 0.3);
+
 }
 
 
 #index-posts, #index-aboutus {
     margin: auto;
-    background-color: rgba(127, 198, 115, 0.3);
     padding: 60px 50px 100px 50px;
     border-radius: 5px;
 }
@@ -118,15 +135,23 @@ main {
 #index-posts button, #index-aboutus button {
     padding: 20px 85px 20px 85px;
     background-color: #f8f8f8;
-    border: 1px solid #f8f8f8;
+    border: 1px solid black;
     border-radius: 3px;
     text-decoration: underline;
     font-size: 2rem;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 #index-posts button:hover, #index-aboutus button:hover {
     border: 1px solid black;
+    cursor: pointer;
+    background-color: #e3e3e3;
+
+}
+
+#index-posts button:active, #index-aboutus button:active {
+    background-color: #eeeded;
 }
 
 
@@ -144,7 +169,16 @@ main {
 /*---------------------------------------------------tablet-------------------------------------------------*/
 
 @media screen and (max-width: 1124px){
+
+    #scroller {
+        display: none;
+    }
     
+    .arrow-left, .arrow-right {
+        display: none;
+    }
+
+
     .Hero-bilde h1 {
         position: absolute;
         top: 140px;

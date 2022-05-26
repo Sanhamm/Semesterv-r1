@@ -22,7 +22,9 @@ document.title = data.title.rendered;
 detail.innerHTML = "";
 let newPost = `<div>  <img src='${data._embedded['wp:featuredmedia']['0'].source_url}'>
 <h1>${data.title.rendered}</h1>
+<div id='content'>
 <p>${data.content.rendered}</p>
+</div>
 </div>`
 detail.innerHTML += newPost
 }

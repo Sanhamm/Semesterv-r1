@@ -44,6 +44,12 @@ input::placeholder, textarea::placeholder {
     margin-left: 30px;
 }
 
+#btn:hover {
+    background-color: #7fc673c2;
+    cursor: pointer;
+
+}
+
 #navnMld, #subjectMld, #mailMld, #msgMld {
     color: red;
 }

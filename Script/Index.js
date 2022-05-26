@@ -32,11 +32,22 @@ let listScroller = (myList) => {
         let newList = `<div class = 'latestPost'>
         <img src='${post._embedded['wp:featuredmedia']['0'].source_url}'>
         <h2>${post.title.rendered}</h2>
-        <button>Lag selv</button
+        <a href='./detailpost.html?id=${post.id}'>Lag selv</a>
         </div>`
         list.innerHTML += newList;
     }
 
 }
 
+let rightArrow = document.querySelector("span.arrow-right")
+let leftArrow = document.querySelector("span.arrow-left")
 
+rightArrow.addEventListener("click", () => {    
+    console.log("neste");
+    document.querySelector('#scroller').scrollLeft += -440;
+})
+
+leftArrow.addEventListener("click", () => {    
+    console.log("forrige");
+    document.querySelector('#scroller').scrollLeft += 440;
+})

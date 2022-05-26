@@ -1,0 +1,39 @@
+img {
+    width: 100vw;
+    height: 560px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+ #content {
+    margin: 70px;
+}
+
+ul, ol {
+    margin: 50px;
+}
+
+button {
+    margin:50px;
+    background-color: rgba(127, 198, 115, 0.8);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: rgba(127, 198, 115, 0.5);
+    cursor: pointer;
+
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+
+}
