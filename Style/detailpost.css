@@ -18,7 +18,7 @@ ul, ol {
     margin: 50px;
 }
 
-button {
+ #tilbake {
     margin:50px;
     background-color: rgba(127, 198, 115, 0.8);
     border: none;
@@ -26,13 +26,13 @@ button {
     border-radius: 3px;
 }
 
-button:hover {
+#tilbake:hover {
     background-color: rgba(127, 198, 115, 0.5);
     cursor: pointer;
 
 }
 
-button a {
+ #tilbake {
     text-decoration: none;
     color: black;
 
