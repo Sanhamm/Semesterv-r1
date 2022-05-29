@@ -1,4 +1,4 @@
-const burger = document.getElementById("meny")
+const burger = document.getElementById("meny");
 
 
 function burgerFunction() {
@@ -8,7 +8,7 @@ function burgerFunction() {
         x.style.display = "none";
     } else {
         x.style.display = "block";
-        x.style.zIndex = "9"
+        x.style.zIndex = "9";
     }
 }
 

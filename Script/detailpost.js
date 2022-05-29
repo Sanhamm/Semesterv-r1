@@ -7,13 +7,13 @@ const id = params.get("id");
 console.log(id);
 
 let detail = document.querySelector("div#postDetails");
-const detailURL = "https://www.sanhamm.no/exam1/wp-json/wp/v2/posts/" + id + "?_embed"
+const detailURL = "https://www.sanhamm.no/exam1/wp-json/wp/v2/posts/" + id + "?_embed";
 
 fetch(detailURL)
 .then(respons => respons.json())
 .then(data => {
     console.log(data);
-    listDetails(data)
+    listDetails(data);
 })
 .catch(error => console.error(error));
 
@@ -25,6 +25,6 @@ let newPost = `<div>  <img src='${data._embedded['wp:featuredmedia']['0'].source
 <div id='content'>
 <p>${data.content.rendered}</p>
 </div>
-</div>`
-detail.innerHTML += newPost
-}
+</div>`;
+detail.innerHTML += newPost;
+};

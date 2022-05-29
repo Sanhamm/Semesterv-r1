@@ -1,7 +1,7 @@
 const form = document.querySelector("#contact");
 form.addEventListener("submit", validateForm);
 
-const message = document.querySelector("#message")
+const message = document.querySelector("#message");
 
 //input const
 const fName = document.querySelector("#navn");
@@ -17,12 +17,12 @@ const msgMsg = document.querySelector("#msgMld");
 
 //function til feil melding 
 function bannerMsgSubmitt() {
-    message.innerHTML = "It's submitted!"
-    message.classList.add("green")
+    message.innerHTML = "It's submitted!";
+    message.classList.add("green");
 }
 function bannerMsgFail() {
-    message.innerHTML = "Check if everything is correct!"
-    message.classList.add("red")
+    message.innerHTML = "Check if everything is correct!";
+    message.classList.add("red");
 }  
 
 
@@ -33,10 +33,10 @@ function validateForm(err) {
     console.log("Name: " + submittedName);
     nameMsg.innerHTML = "";
     if (submittedName.length < 5) {
-        nameMsg.innerHTML +="The name must have atleast 5 characters long."
+        nameMsg.innerHTML +="The name must have atleast 5 characters long.";
     }
     if (/\d/.test(submittedName)) {
-        nameMsg.innerHTML +="the name can't contain any numbers."
+        nameMsg.innerHTML +="the name can't contain any numbers.";
     }
     //lånt fra codepen eksempel til lasse.
     
@@ -63,13 +63,13 @@ function validateForm(err) {
     msgMsg.innerHTML = "";
     let msgPattern = /^[a-zA-ZæÆøØåÅ0-9.-\s]{25,}$/; // har brukt et eksempel fra codse.tutsplus.com og satt inn ekstra til mer egnet bruk
     if (!msgPattern.test(submittedMsg)) {
-        msgMsg.innerHTML += "You need to use atleast 25 characters!"
+        msgMsg.innerHTML += "You need to use atleast 25 characters!";
 
     }
 
     if (nameMsg.innerHTML === "" && mailMsg.innerHTML === "" && subjectMsg.innerHTML === "" && msgMsg.innerHTML === "") {
-        bannerMsgSubmitt()
+        bannerMsgSubmitt();
     } else {
-        bannerMsgFail()
+        bannerMsgFail();
     }
 }
