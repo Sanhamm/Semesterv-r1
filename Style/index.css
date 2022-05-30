@@ -27,7 +27,6 @@ p, h2, li, h1, button {
     border: 0.1px solid black;
     border-radius: 2px;
     text-align: center;
-    translate: -140%;
     margin: 55px;
 }
 
